@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joey C. Galolo | IT Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+<div class="pf">
+  <button class="burger" id="burger" aria-label="Menu"><i data-icon="menu" data-size="20"></i></button>
+
+  <aside class="side" id="side">
+    <a class="logo" href="#home">JG<i></i></a>
+    <nav id="nav">
+      <a href="#home" data-id="home"><i data-icon="home" data-size="17"></i>Home</a>
+      <a href="#about" data-id="about"><i data-icon="user" data-size="17"></i>About</a>
+      <a href="#skills" data-id="skills"><i data-icon="wrench" data-size="17"></i>Skills</a>
+      <a href="#projects" data-id="projects"><i data-icon="code" data-size="17"></i>Projects</a>
+      <a href="#photojournalism" data-id="photojournalism"><i data-icon="camera" data-size="17"></i>Photojournalism</a>
+      <a href="#experience" data-id="experience"><i data-icon="briefcase" data-size="17"></i>Experience</a>
+      <a href="#certificates" data-id="certificates"><i data-icon="award" data-size="17"></i>Certificates</a>
+      <a href="#contact" data-id="contact"><i data-icon="mail" data-size="17"></i>Contact</a>
+    </nav>
+    <div class="sbot">
+      <p>Let's build something great together.</p>
+      <div class="soc">
+        <a data-bind="github" target="_blank" rel="noreferrer" aria-label="GitHub"><i data-icon="github" data-size="16"></i></a>
+        <a data-bind="linkedin" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i data-icon="linkedin" data-size="16"></i></a>
+        <a data-bind="mailto" aria-label="Email"><i data-icon="mail" data-size="16"></i></a>
+      </div>
+      <a class="btn full" data-bind="cv" target="_blank" rel="noreferrer">View CV <i data-icon="arrowUpRight" data-size="15"></i></a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero dots">
+      <div class="hero-l">
+        <span class="pill"><b></b>Open to opportunities</span>
+        <h1 id="heroName"></h1>
+        <p class="role">BSIT Graduate · Web Developer · Photojournalist</p>
+        <p class="lead">I enjoy turning ideas into functional systems and capturing meaningful moments through photography and multimedia. I am passionate about technology, visual storytelling, web development, and continuously developing my skills in photography and content creation.</p>
+        <div class="row">
+          <a class="btn" href="#projects">Explore My Work <i data-icon="arrowRight" data-size="16"></i></a>
+          <a class="btn ghost" data-bind="cv" download><i data-icon="download" data-size="16"></i>Download CV</a>
+        </div>
+        <div class="stats" id="stats"></div>
+      </div>
+      <div class="hero-r">
+        <div id="heroPortrait"></div>
+        <div class="float f1"><i data-icon="graduation" data-size="18"></i><div><b>BSIT · SLSU</b><span>Tomas Oppus, 2026</span></div></div>
+        <div class="float f2"><i data-icon="camera" data-size="18"></i><div><b>Photojournalist</b><span>School Publication</span></div></div>
+      </div>
+    </section>
+
+    <div class="marquee"><div id="marquee"></div></div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="head rv"><div><span class="eyebrow">01 — ABOUT ME</span><h2>About Me</h2></div></div>
+      <div class="g2">
+        <div class="copy rv">
+          <p class="big">I'm a Bachelor of Science in Information Technology graduate from Southern Leyte State University with experience in web development, multimedia, photography, documentation, and technical work.</p>
+          <p>I have two years of experience as a Photojournalist in our school publication during my college years, where I was involved in covering school activities, events, and capturing photographs for publication. This experience helped me develop my skills in photography, visual storytelling, attention to detail, creativity, and working under deadlines.</p>
+          <p>My experience in photojournalism also taught me how to capture important moments, choose appropriate compositions, and work with other members of a publication team. I am interested in further developing my skills in photography and multimedia content creation.</p>
+        </div>
+        <div class="rv" style="transition-delay:120ms">
+          <div class="card prof">
+            <div id="aboutPic"></div>
+            <div class="cb">
+              <h3 id="aboutName"></h3><span class="tag">BSIT Graduate</span>
+              <dl>
+                <dt>Location</dt><dd id="aboutLoc"></dd>
+                <dt>School</dt><dd>Southern Leyte State University</dd>
+                <dt>Degree</dt><dd>BS Information Technology</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="alt">
+      <div class="head rv"><div><span class="eyebrow">02 — SKILLS</span><h2>Skills</h2><p class="lead">Technical depth, creative eye, and the habits that keep projects moving.</p></div></div>
+      <div class="skgrid" id="skgrid"></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="head rv">
+        <div><span class="eyebrow">03 — FEATURED PROJECTS</span><h2>Featured Projects</h2><p class="lead">Systems I've designed and built.</p></div>
+        <a class="link" data-bind="github" target="_blank" rel="noreferrer">View All <i data-icon="arrowRight" data-size="15"></i></a>
+      </div>
+      <div class="pgrid" id="pgrid"></div>
+    </section>
+
+    <!-- PHOTOJOURNALISM -->
+    <section id="photojournalism" class="alt">
+      <div class="head rv"><div><span class="eyebrow">04 — PHOTOJOURNALISM</span><h2>Photojournalism</h2><p class="lead">2 Years of Experience — School Publication</p></div></div>
+      <div class="rv"><div class="chips" id="photoChips" style="margin-bottom:32px"></div></div>
+      <div class="masonry" id="photoGrid"></div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="head rv"><div><span class="eyebrow">05 — EXPERIENCE</span><h2>Experience</h2></div></div>
+      <div class="tl">
+        <div class="rv"><div class="job">
+          <span class="eyebrow">JAN 15, 2026 – APR 3, 2026</span>
+          <h3>Web Developer Intern</h3><p class="org">ARAMDA LOGICS INC.</p>
+          <ul>
+            <li>Developed <b>responsive websites</b> using HTML, CSS, JavaScript, PHP, and React.js.</li>
+            <li>Worked with the team on web development tasks.</li>
+            <li>Developed backend applications and REST APIs using <b>Java and Spring Boot</b>.</li>
+            <li>Tested web pages and fixed minor issues.</li>
+            <li>Assisted in organizing and updating website files and content.</li>
+            <li>Gained hands-on experience in <b>Android Studio</b> for mobile application development.</li>
+          </ul>
+          <div class="mini" id="internGrid"></div>
+        </div></div>
+        <div class="rv"><div class="job">
+          <span class="eyebrow">JUN 15, 2026 – JUL 22, 2026</span>
+          <h3>Department of Agriculture</h3><p class="org">LGU-MALITBOG · Administrative Support / Clerical Role</p>
+          <ul>
+            <li>Administrative Support / Clerical Role.</li>
+            <li>Technical / Agricultural Field Assistant.</li>
+            <li>Administrative Aide / Data Encoder.</li>
+          </ul>
+          <div class="mini" id="agriGrid"></div>
+        </div></div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="alt">
+      <div class="head rv"><div><span class="eyebrow">06 — CERTIFICATES &amp; TRAINING</span><h2>Certificates &amp; Training</h2><p class="lead">Click a certificate to view it full-size.</p></div></div>
+      <div class="cgrid" id="cgrid"></div>
+    </section>
+
+    <!-- MY WORK -->
+    <section id="work">
+      <div class="head rv"><div><span class="eyebrow">07 — MY WORK</span><h2>My Work</h2><p class="lead">Photos &amp; screenshots — drop files in src/assets/work/ (prefix: photography-, it-, web-, internship-).</p></div></div>
+      <div class="rv"><div class="fl" id="filters"></div></div>
+      <div id="workWrap"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="alt">
+      <div class="head rv"><div><span class="eyebrow">08 — LET'S WORK TOGETHER</span><h2>Let's Work Together</h2></div></div>
+      <div class="g2">
+        <div class="copy rv">
+          <p class="big">I'm open to opportunities involving web development, IT, photography, multimedia, and creative digital work.</p>
+          <ul class="clist">
+            <li><i data-icon="mail" data-size="18"></i><span id="cEmail"></span></li>
+            <li><i data-icon="phone" data-size="18"></i><span id="cPhone"></span></li>
+            <li><i data-icon="mapPin" data-size="18"></i><span id="cLoc"></span></li>
+          </ul>
+        </div>
+        <div class="rv" style="transition-delay:120ms">
+          <div class="card cb form">
+            <input id="fName" placeholder="Name" />
+            <input id="fEmail" type="email" placeholder="Email" />
+            <textarea id="fText" rows="5" placeholder="Message"></textarea>
+            <button class="btn full" id="send">Send Message <i data-icon="arrowRight" data-size="16"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer"></footer>
+  </main>
+
+  <div class="lb" id="lb" hidden>
+    <button aria-label="Close" id="lbClose"><i data-icon="x" data-size="22"></i></button>
+    <img id="lbImg" alt="" />
+    <p id="lbCap"></p>
+  </div>
+</div>
+
+<script src="src/assets.js"></script>
+<script src="src/data.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
